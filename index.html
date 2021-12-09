@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Ticket Management Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toolboxContainer">
+        <div class="toolboxPriorityCont">
+            <div class="lightpink color"></div>
+            <div class="lightblue color"></div>
+            <div class="lightgreen color"></div>
+            <div class="black color"></div>
+        </div>
+        <div class="actionbtnCont">
+          <div class="addBtn"><i class="fas fa-plus"></i></div>
+          <div class="removeBtn"><i class="fas fa-times"></i></div>
+        </div>
+    </div>
+    <!-- Main Container -->
+    <div class="mainCont"></div>
+    <div class="modalCont">
+        <textarea spellcheck="false" class="textareaCont" placeholder="Enter your Ticket task here.." ></textarea>
+        <div class="priorityColorCont">
+            <div class="lightpink priorityColor"></div>
+            <div class="lightblue priorityColor"></div>
+            <div class="lightgreen priorityColor"></div>
+            <div class="black priorityColor border"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

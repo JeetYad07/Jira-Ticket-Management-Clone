@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.toolboxContainer {
+    height: 5rem;
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+}
+.toolboxContainer > * {
+    margin-left: 4rem;
+    border-radius: 2px;
+}
+.toolboxPriorityCont {
+    height: 3.5rem;
+    width: 14rem;
+    background-color: #84817a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.actionbtnCont {
+    height: 3.5rem;
+    width: 6rem;
+    background-color: #84817a;
+    display: flex;
+}
+.actionbtnCont > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+    color: #dfe4ea;
+}
+.color {
+    height: 1.2rem;
+    width: 2rem;
+    background-color: lightcoral;
+}
+.lightpink {
+    background-color: lightpink;
+}
+.lightblue {
+    background-color: lightblue;
+}
+.lightgreen {
+    background-color: lightgreen;
+}
+.black {
+    background-color: black;
+}
+.actionbtnCont > *:hover {
+    background-color: #a4b0be;
+}
+.modalCont {
+    height: 50vh;
+    width: 45vw;
+    background-color: lightblue;
+    position: absolute;
+    top: calc((100vh - 50vh) / 2);
+    left: calc((100vw - 45vw) / 2);
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.textareaCont {
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: #d1ccc0;
+    resize: none;
+    font-size: 1.3rem;
+    padding: 2rem;
+}
+.priorityColorCont {
+    height: 100%;
+    width: 25%;
+    background-color: #4b4b4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.priorityColor {
+    height: 2.5rem;
+    width: 50%;
+}
+.border {
+    border: 5px solid #d1ccc0;
+}
+.mainCont {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.ticketCont {
+    height: 13rem;
+    width: 16rem;
+    background-color: #f1f2f6;
+}
+.ticketColor {
+    height: 1rem;
+    /* background-color: lightpink; */
+}
+.ticketId {
+    height: 2rem;
+
+    padding: 0.4rem;
+}
+
+.ticketTaskArea {
+    height: calc(100% - 1rem - 2rem - 2rem);
+    padding: 0.4rem;
+    outline: none;
+}
+.ticketLock {
+    height: 2rem;
+    color: #bdc3c7;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .modalCont {
+        width: 60vw;
+        left: calc((100vw - 60vw) / 2);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .modalCont {
+        width: 75vw;
+        height: 55vh;
+        top: calc((100vh - 55vh) / 2);
+        left: calc((100vw - 75vw) / 2);
+        flex-direction: column;
+    }
+    .textareaCont {
+        width: 100%;
+        height: 75%;
+    }
+    .priorityColorCont {
+        flex-direction: row;
+        width: 100%;
+        height: 25%;
+    }
+    .priorityColor {
+        width: 17%;
+    }
+    .toolboxContainer > * {
+        margin-left: 2rem;
+        border-radius: 2px;
+    }
+}
